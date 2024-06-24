@@ -1,4 +1,4 @@
-# fizjocare
+# fizjo
 
 ## Project setup
 ```

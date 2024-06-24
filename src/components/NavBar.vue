@@ -10,12 +10,12 @@
 
 const LINKS = [
     {route: "/", value: "Strona główna"},
-    {route: "/about", value: "O mnie"},
-    {route: "/", value: "Oferta"},
-    {route: "/", value: "Jak pracuję"},
-    {route: "/", value: "Zabiegi"},
-    {route: "/", value: "Cennik"},
-    {route: "/", value: "Kontakt"}
+    {route: "/o-mnie", value: "O mnie"},
+    {route: "/oferta", value: "Oferta"},
+    {route: "/jak-pracuje", value: "Jak pracuję"},
+    {route: "/zabiegi", value: "Zabiegi"},
+    {route: "/cennik", value: "Cennik"},
+    {route: "/kontakt", value: "Kontakt"}
 ]
 </script>
 

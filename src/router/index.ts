@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
+import OfferView from '../views/OfferView.vue'
+import WorkEthics from '../views/WorkEthicsView.vue'
+import TreatmentsView from '../views/TreatmentsView.vue'
+import PricingView from '../views/PricingView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -9,9 +14,35 @@ const routes: Array<RouteRecordRaw> = [
     component: HomeView
   },
   {
-    path: '/about',
+    path: '/o-mnie',
     name: 'about',
     component: AboutView
+  }
+  ,
+  {
+    path: '/oferta',
+    name: 'offer',
+    component: OfferView
+  },
+  {
+    path: '/jak-pracuje',
+    name: 'workethics',
+    component: WorkEthics
+  },
+  {
+    path: '/zabiegi',
+    name: 'treatments',
+    component: TreatmentsView
+  },
+  {
+    path: '/cennik',
+    name: 'pricing',
+    component: PricingView
+  },
+  {
+    path: '/kontakt',
+    name: 'contact',
+    component: ContactView
   }
 ]
 
