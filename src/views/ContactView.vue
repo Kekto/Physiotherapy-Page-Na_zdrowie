@@ -1,6 +1,14 @@
 <template>
-    <div class="contact">
-      <h1>This is a contact page</h1>
-    </div>
-  </template>
-  
+  <div class="home">
+    <TitleBanner title="Kontakt"/>
+  </div>
+</template>
+
+<script setup lang="ts">
+import TitleBanner from '../components/TitleBanner.vue'
+
+</script>
+
+<style lang="scss" scoped>
+
+</style>
