@@ -29,6 +29,7 @@ nav {
     font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
+    transition: 0.3s;
 
     &:hover{
       color: #0e9156;

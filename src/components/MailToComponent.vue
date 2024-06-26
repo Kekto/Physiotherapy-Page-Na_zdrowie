@@ -17,6 +17,7 @@
         />
         <button
             class="mail-to-form__button"
+            :disabled="checkButton" 
         >
             Wyślij
         </button>
@@ -24,10 +25,14 @@
 </template>
 
 <script setup lang="ts">
-    var names:string;
-    var email:string;
-    var message:string;
+import { computed, ref } from 'vue';
+    const names = ref(String())
+    const email = ref(String())
+    const message = ref(String())
 
+    const checkButton = computed(() => {
+        return !names.value || !email.value || !message.value
+    })
 </script>
 
 <style lang="scss" scoped>
@@ -62,6 +67,10 @@
 
     textarea{
         resize: vertical;
+
+        &:focus{
+            outline: none;
+        }
     }
 
     &__button{
@@ -74,9 +83,15 @@
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         border: none;
         opacity: 75%;
+        transition: 0.3s;
 
-        &:hover{
+        &:hover:not(:disabled){
             opacity: 100%;
+        }
+
+        &:disabled{
+            background-color: gray;
+            transition: 0.3s;
         }
     }
 }
