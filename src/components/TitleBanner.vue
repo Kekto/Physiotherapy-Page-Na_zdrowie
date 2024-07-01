@@ -1,6 +1,6 @@
 <template>
     <div class="title-banner">
-      <h1>{{$props.title}}</h1>
+      <h2>{{$props.title}}</h2>
     </div>
     <div>
         
@@ -25,8 +25,9 @@ const props = defineProps({
   align-items: center;
 }
 
-h1{
+h2{
   margin: 0px;
+  font-size: 30px;
   color: white;
   padding-left: 24px;
   font-weight: normal;
