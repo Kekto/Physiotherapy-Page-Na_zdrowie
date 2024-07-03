@@ -17,7 +17,6 @@
 import TitleBanner from '@/components/TitleBanner.vue';
 import PricingItem from '@/components/PricingItem.vue'
 
-
 const prices = [
   {
     image: "",
