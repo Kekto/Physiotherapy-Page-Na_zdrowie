@@ -2,10 +2,12 @@
   <div class="about">
     <TitleBanner title="O mnie"/>
     <div class="about__content">
-      <!-- <a href="/media/CV_PL.pdf" target="_blank"> PDF File EXAMPLE</a> -->
       <img class="about__content__image" src="@/assets/łukasz.png">
       <div class="about__content__details">
         <h4>Łukasz Piszcz</h4>
+        <div class="about__content__details__paragraph">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
         <div class="about__content__details__paragraph">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         </div>
@@ -18,9 +20,9 @@
       <h4>Certyfikaty i dyplomy</h4>
       <div class="about__documents__list">
         <div v-for="item in documents" :key="item.name" class="about__documents__list__item">
-          <AboutDocumentItem 
+          <DocumentItem 
             :name="item.name"
-            @click="openFile(item.path)"
+            :path="item.path"
           />
         </div>
       </div>
@@ -30,7 +32,7 @@
 
 <script setup lang="ts">
 import TitleBanner from '@/components/TitleBanner.vue';
-import AboutDocumentItem from '@/components/AboutDocumentItem.vue'
+import DocumentItem from '@/components/about/DocumentItem.vue'
 
 const documents = [
   {
@@ -59,9 +61,6 @@ const documents = [
   },
 ]
 
-const openFile = ((path:string) => {
-  window.open(path, "_blank")?.focus()
-})
 
 </script>
 
@@ -81,11 +80,13 @@ const openFile = ((path:string) => {
     &__image{
       width: 300px;
       height: 450px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      background-color: rgb(226, 226, 226);
     }
 
     &__details{
       text-align: left;
-      margin: 0px 20px 0px 20px;
       max-width: 500px;
       min-width: 300px;
       border-left: 2px solid #0e9156;
@@ -98,7 +99,7 @@ const openFile = ((path:string) => {
   }
 
   &__documents{
-    margin: 5vw;
+    margin: 0px 5vw 0px 5vw;
     text-align: left;
 
     &__list{
@@ -107,6 +108,7 @@ const openFile = ((path:string) => {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
+
     gap: 12px;
 
     &__item{

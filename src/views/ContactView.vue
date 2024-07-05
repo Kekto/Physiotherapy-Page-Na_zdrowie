@@ -31,8 +31,8 @@
 
 <script setup lang="ts">
 import TitleBanner from '../components/TitleBanner.vue'
-import ContactsGoogleMap from '../components/ContactsGoogleMap.vue';
-import MailToComponent from '../components/MailToComponent.vue'
+import ContactsGoogleMap from '../components/contact/ContactsGoogleMap.vue';
+import MailToComponent from '../components/contact/MailToComponent.vue'
 </script>
 
 <style lang="scss" scoped>

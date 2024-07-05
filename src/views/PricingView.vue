@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import TitleBanner from '@/components/TitleBanner.vue';
-import PricingItem from '@/components/PricingItem.vue'
+import PricingItem from '@/components/pricing/PricingItem.vue'
 
 const prices = [
   {

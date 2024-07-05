@@ -19,8 +19,8 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .divider-line{
-margin: 20px;
-height: 2px;
+    margin: 20px;
+    height: 2px;
 
     &__vertical{
         border-left: 1px solid black;
