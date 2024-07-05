@@ -24,6 +24,7 @@ const LINKS = [
     display: flex;
     flex-direction: row;
     justify-content: right;
-    gap: 12px;
+    gap: 16px;
+    padding-right: 20px;
 }
 </style>

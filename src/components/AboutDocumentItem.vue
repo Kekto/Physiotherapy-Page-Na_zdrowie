@@ -14,6 +14,13 @@ const props = defineProps({
 
 <style scoped lang="scss">
 .item{
-    width: auto;
+    transition: 0.3s;
+    font-weight: bold;
+    
+    &:hover{
+        transition: 0.3s;
+        color: #0e9156;
+        cursor: pointer;
+    }
 }
 </style>

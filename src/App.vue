@@ -2,7 +2,7 @@
   <nav>
     <NavBar/>
   </nav>
-  <router-view/>
+  <router-view class="router-view"/>
 </template>
 
 <script setup lang="ts">
@@ -23,8 +23,13 @@ body{
 }
 
 nav {
-  padding: 30px;
-
+  position: fixed;
+  height: 70px;
+  align-content: center;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -39,5 +44,9 @@ nav {
       color: #0e9156;
     }
   }
+}
+
+.router-view{
+padding-top: 70px;
 }
 </style>

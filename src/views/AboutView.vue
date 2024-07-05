@@ -3,7 +3,7 @@
     <TitleBanner title="O mnie"/>
     <div class="about__content">
       <!-- <a href="/media/CV_PL.pdf" target="_blank"> PDF File EXAMPLE</a> -->
-      <img class="about__content__image" src="https://gabinetfizjocare.pl/wp-content/uploads/2019/02/%C5%82ukasz.png">
+      <img class="about__content__image" src="@/assets/łukasz.png">
       <div class="about__content__details">
         <h4>Łukasz Piszcz</h4>
         <div class="about__content__details__paragraph">
@@ -18,7 +18,10 @@
       <h4>Certyfikaty i dyplomy</h4>
       <div class="about__documents__list">
         <div v-for="item in documents" :key="item.name" class="about__documents__list__item">
-          <AboutDocumentItem :name="item.name"/>
+          <AboutDocumentItem 
+            :name="item.name"
+            @click="openFile(item.path)"
+          />
         </div>
       </div>
     </div>
@@ -31,24 +34,35 @@ import AboutDocumentItem from '@/components/AboutDocumentItem.vue'
 
 const documents = [
   {
-    name: "file_01"
+    name: "file_01",
+    path: String("/media/CV_PL.pdf")
   },
   {
-    name: "file_02"
+    name: "file_02",
+    path: String("/media/CV_PL.pdf")
   },
   {
-    name: "file_03"
+    name: "file_03",
+    path: String("/media/CV_PL.pdf")
   },
   {
-    name: "file_04"
+    name: "file_04",
+    path: String("/media/CV_PL.pdf")
   },
   {
-    name: "file_05"
+    name: "file_05",
+    path: String("/media/CV_PL.pdf")
   },
   {
-    name: "file_06"
+    name: "file_06",
+    path: String("/media/CV_PL.pdf")
   },
 ]
+
+const openFile = ((path:string) => {
+  window.open(path, "_blank")?.focus()
+})
+
 </script>
 
 <style scoped lang="scss">
