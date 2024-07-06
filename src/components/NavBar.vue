@@ -11,7 +11,7 @@
 const LINKS = [
     {route: "/", value: "Strona główna"},
     {route: "/o-mnie", value: "O mnie"},
-    {route: "/oferta", value: "Oferta"},
+    // {route: "/oferta", value: "Oferta"},
     {route: "/jak-pracuje", value: "Jak pracuję"},
     {route: "/zabiegi", value: "Zabiegi"},
     {route: "/cennik", value: "Cennik"},

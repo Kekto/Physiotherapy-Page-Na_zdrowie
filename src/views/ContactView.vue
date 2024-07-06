@@ -17,8 +17,14 @@
         </div>
         <div class="contact__content__info__details">
           <a>Telefon:</a>
-          <a class="bold">XXX XXX XXX</a>
-          <a href="mailto:info@mail.pl" class="bold link">info@mail.pl</a>
+          <div>
+            <img src="@/assets/icons/phone.svg" class="icon"/>
+            <a class="bold">XXX XXX XXX</a>
+          </div>
+          <div>
+            <img src="@/assets/icons/envelope.svg" class="icon"/>
+            <a href="mailto:info@mail.pl" class="bold link">info@mail.pl</a>
+          </div>
         </div>
       </div>
       <ContactsGoogleMap/>
@@ -49,6 +55,7 @@ import MailToComponent from '../components/contact/MailToComponent.vue'
   &__info{
     min-width: 400px;
     width: 40vw;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
 
@@ -60,10 +67,12 @@ import MailToComponent from '../components/contact/MailToComponent.vue'
     }
   }
 }
+
 .bold{
   font-weight:600;
   font-size: 14px;
 }
+
 .link{
   text-decoration: none;
   color: black;
@@ -71,5 +80,10 @@ import MailToComponent from '../components/contact/MailToComponent.vue'
   &:hover{
     color: #0e9156;
   }
+}
+
+.icon{
+    height: 16px;
+    padding-right: 12px;
 }
 </style>

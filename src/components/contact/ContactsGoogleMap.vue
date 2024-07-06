@@ -17,10 +17,8 @@ const center = { lat: 51.241562099387075, lng: 22.518481991812706 }
 
 <style lang="scss" scoped>
 .google-map{
-  min-width: 400px;
-  min-height:300px;
+  width: 400px;
+  height:300px;
 
-  width:45vw;
-  height:40vh;
 }
 </style>

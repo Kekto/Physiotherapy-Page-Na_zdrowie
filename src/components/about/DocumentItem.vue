@@ -23,6 +23,9 @@ const props = defineProps({
     font-weight: bold;
     text-decoration: none;
     color: black;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
 
     &:hover{
         transition: 0.3s;
