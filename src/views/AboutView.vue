@@ -37,27 +37,27 @@ import DocumentItem from '@/components/about/DocumentItem.vue'
 const documents = [
   {
     name: "file_01",
-    path: String("/media/CV_PL.pdf")
+    path: "/media/CV_PL.pdf"
   },
   {
     name: "file_02",
-    path: String("/media/CV_PL.pdf")
+    path: "/media/CV_PL.pdf"
   },
   {
     name: "file_03",
-    path: String("/media/CV_PL.pdf")
+    path: "/media/CV_PL.pdf"
   },
   {
     name: "file_04",
-    path: String("/media/CV_PL.pdf")
+    path: "/media/CV_PL.pdf"
   },
   {
     name: "file_05",
-    path: String("/media/CV_PL.pdf")
+    path: "/media/CV_PL.pdf"
   },
   {
     name: "file_06",
-    path: String("/media/CV_PL.pdf")
+    path: "/media/CV_PL.pdf"
   },
 ]
 

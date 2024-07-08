@@ -1,18 +1,18 @@
 <template>
     <div class="pricing-item">
         <img class="pricing-item__image" :src="image"/>
-        <h3>{{$props.title}}</h3>
+        <h3>{{ title }}</h3>
         <DividerLine/>
         <div class="pricing-item__description">
-            {{$props.description}}
+            {{ description }}
         </div>
         <DividerLine/>
         <div class="pricing-item__price">
             <div class="pricing-item__price__value">
-                {{ $props.value }}
+                {{ value }}
             </div>
             <div class="pricing-item__price__currency">
-                {{ props.currency }}
+                {{ currency }}
            </div>
         </div>
     </div>

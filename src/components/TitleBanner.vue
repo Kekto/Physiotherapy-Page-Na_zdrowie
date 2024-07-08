@@ -1,6 +1,6 @@
 <template>
     <div class="title-banner">
-      <h2>{{$props.title}}</h2>
+      <h2>{{ title }}</h2>
     </div>
     <div>
         

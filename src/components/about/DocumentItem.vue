@@ -1,6 +1,6 @@
 <template>
     <img src="@/assets/icons/file.svg" class="icon"/>
-    <a :href="path" target="_blank" class="item">{{ $props.name }}</a>
+    <a :href="path" target="_blank" class="item">{{ name }}</a>
 </template>
 
 <script setup lang="ts">

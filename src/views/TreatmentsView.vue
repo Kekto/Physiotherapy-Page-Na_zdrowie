@@ -50,7 +50,7 @@ const treatmentTypes = [
       },
       {
         name: "Treatment type 03 - Name 02",
-        details: "Treatment type 01 - Name 02 details"
+        details: "Treatment type 03 - Name 02 details"
       },
       {
         name: "Treatment type 03 - Name 03",
