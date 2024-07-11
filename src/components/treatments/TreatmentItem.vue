@@ -1,23 +1,25 @@
 <template>
-    <div class="item">
-        <div class="item__content">
-            <div class="item__content__image">&nbsp;</div>
-            <div class="item__content__details">
+    <div class="treatment-item">
+        <div class="treatment-item__content">
+            <div class="treatment-item__content__image">&nbsp;</div>
+            <div class="treatment-item__content__details">
                 <h4>{{ type }}</h4>
                 <DividerLine/>
                 <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
             </div>
+        </div>
 
-        </div>
-        <div class="item__collapse-bar" @click="isCollapsed = !isCollapsed, collapse(String(type))">
-            <a v-if="!isCollapsed">Rozwiń</a>
-            <a v-else>Zwiń</a>
-        </div>
-        <div class="item__collapsible" :id="type">
-            <div class="item__collapsible__item" v-for="item in childTreatments" :key="item.name">
-                {{ item.name }}
-                {{ item.details }}
+        <div class="treatment-item__collapsible" :id="type">
+            <div class="treatment-item__collapsible__list">
+                <div class="treatment-item__collapsible__list__item" v-for="item in childTreatments" :key="item.name">
+                    {{ item.name }}
+                    {{ item.details }}
+                </div>
             </div>
+        </div>
+        <div class="treatment-item__collapse-bar" @click="isCollapsed = !isCollapsed, collapse(String(type))">
+            <img class="icon" v-if="!isCollapsed" src="@/assets/icons/arrow-down.svg" />
+            <img class="icon upside-down" v-else src="@/assets/icons/arrow-down.svg" />
         </div>
     </div>
 </template>
@@ -54,7 +56,7 @@ const collapse = ((type:string) => {
 </script>
 
 <style scoped lang="scss">
-.item{
+.treatment-item{
     height: 100px;
     min-width: 400px;
     width: 70vw;
@@ -91,6 +93,7 @@ const collapse = ((type:string) => {
             min-width: 300px;
             padding-left: 20px;
             padding-right: 20px;
+            padding-bottom: 12px;
         }
 
         h4{
@@ -104,10 +107,11 @@ const collapse = ((type:string) => {
         justify-content: center;
         align-items: center;
         transition: 0.3s;
+        background-color: #42b983;
 
         &:hover{
             cursor: pointer;
-            box-shadow: rgb(204, 219, 232) 0px 3px 6px 0px inset;
+            background-color: #42b983;
             transition: 0.3s;
         }
     }
@@ -121,9 +125,26 @@ const collapse = ((type:string) => {
         flex-direction: column;
         gap: 12px;
 
-        &__item{
-            margin-top: 12px;
+        &__list{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgb(204, 219, 232) 0px 3px 6px 0px inset;
+
+            &__item{
+
+            }
         }
     }
+}
+
+.icon{
+    height: 20px;
+    color: white;
+}
+
+.upside-down{
+    transform: rotate(180deg);
 }
 </style>
