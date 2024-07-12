@@ -8,12 +8,12 @@
                 <div>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
             </div>
         </div>
-
         <div class="treatment-item__collapsible" :id="type">
             <div class="treatment-item__collapsible__list">
                 <div class="treatment-item__collapsible__list__item" v-for="item in childTreatments" :key="item.name">
-                    {{ item.name }}
-                    {{ item.details }}
+                    <div class="treatment-item__collapsible__list__item__name">{{ item.name }}</div>
+                    <DividerLine :vertical="true"/>
+                    <div class="treatment-item__collapsible__list__item__details">{{ item.details }}</div>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@ const collapse = ((type:string) => {
         if(!isCollapsed.value){
         collapsible.style.maxHeight = '0px';
         } else {
-            collapsible.style.maxHeight = '150px';
+            collapsible.style.maxHeight = '1000px';
         }
     }
 }
@@ -107,11 +107,11 @@ const collapse = ((type:string) => {
         justify-content: center;
         align-items: center;
         transition: 0.3s;
-        background-color: #42b983;
+        background-color:#42b983;
 
         &:hover{
             cursor: pointer;
-            background-color: #42b983;
+            background-color: #6ae7af;
             transition: 0.3s;
         }
     }
@@ -119,21 +119,38 @@ const collapse = ((type:string) => {
     &__collapsible{
         max-height: 0px;
         overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
+        transition: max-height 0.5s ease-in-out;
 
         display: flex;
         flex-direction: column;
         gap: 12px;
 
         &__list{
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding: 20px 0 20px 0;
             display: flex;
             flex-direction: column;
             box-shadow: rgb(204, 219, 232) 0px 3px 6px 0px inset;
+            gap: 20px;
 
             &__item{
+                text-align: left;
+                margin:0 20px 0 20px;
+                display: flex;
+                flex-direction: row;
 
+                &__name{
+                    min-width: 150px;
+                    width: 150px;
+                    text-align: right;
+                    align-content: center;
+                }
+
+                &__details{
+                    width: auto;
+                    align-content: center;
+                    text-wrap: wrap;
+                    white-space: pre-wrap;
+                }
             }
         }
     }

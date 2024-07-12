@@ -1,11 +1,9 @@
 <template>
-    <div class="divider-line">
-        <div v-if="!vertical">
-            <hr class="horizontal">
-        </div>
-        <div v-else>
-            <div class="divider-line__vertical">&nbsp;</div>
-        </div>
+    <div class="divider-line" v-if="!vertical">
+        <hr class="divider-line-horizontal">
+    </div>
+    <div v-else>
+        <div class="divider-line-vertical">&nbsp;</div>
     </div>
 </template>
 
@@ -18,12 +16,15 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-.divider-line{
-    margin: 20px;
+.divider-line-horizontal{
     height: 2px;
-
-    &__vertical{
-        border-left: 1px solid black;
-    }
+    margin: 20px 0 20px 0;
 }
+
+.divider-line-vertical{
+    height: 100%;
+    border-left: 1px solid black;
+    margin: 0 20px 0 20px;
+}
+
 </style>
