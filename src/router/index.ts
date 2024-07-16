@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import OfferView from '../views/OfferView.vue'
-import WorkEthics from '../views/WorkEthicsView.vue'
+import WorkMethodsView from '../views/WorkMethodsView.vue'
 import TreatmentsView from '../views/TreatmentsView.vue'
 import PricingView from '../views/PricingView.vue'
 import ContactView from '../views/ContactView.vue'
@@ -26,8 +26,8 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/jak-pracuje',
-    name: 'workethics',
-    component: WorkEthics
+    name: 'workmethods',
+    component: WorkMethodsView
   },
   {
     path: '/zabiegi',
