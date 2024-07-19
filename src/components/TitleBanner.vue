@@ -8,7 +8,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
 // eslint-disable-next-line
 const props = defineProps({
     title: String

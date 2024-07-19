@@ -7,8 +7,10 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
+
 let slideIndex = 0;
 let intervalId = null;
+// eslint-disable-next-line
 let slides : NodeListOf<Element>;
 onMounted(() => {
     slides = document.querySelectorAll(".carousel-container img");
@@ -48,7 +50,6 @@ function nextSlide(){
 .carousel-container{
     width: 100vw;
     height: 30vw;
-    // background: #c0c0c0;
     position: relative;
 
     &__slide{

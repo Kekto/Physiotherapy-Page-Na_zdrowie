@@ -19,7 +19,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
 import DividerLine from '@/components/DividerLine.vue'
 // eslint-disable-next-line
 const props = defineProps({
