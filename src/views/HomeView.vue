@@ -1,13 +1,13 @@
 <template>
   <div class="home">
     <div class="title-banner">
-      <h1>This is a home page</h1>
+      <ImageCarousel/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
+import ImageCarousel from '@/components/home/ImageCarousel.vue'
 </script>
 
 <style lang="scss" scoped>
