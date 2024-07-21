@@ -1,7 +1,7 @@
 <template>
     <div class="carousel-container">
         <img class="carousel-container__slide" src="@/assets/logo.png" alt="#1"/>
-        <img class="carousel-container__slide active" src="@/assets/łukasz.png" alt="#2"/>
+        <img class="carousel-container__slide" src="@/assets/łukasz.png" alt="#2"/>
     </div>
 </template>
 
@@ -12,10 +12,10 @@ let slideIndex = 0;
 let intervalId = null;
 // eslint-disable-next-line
 let slides : NodeListOf<Element>;
+
 onMounted(() => {
     slides = document.querySelectorAll(".carousel-container img");
-
-    document.addEventListener("DOMContentLoaded", initializeSlider);
+    initializeSlider();
 })
 
 function initializeSlider(){
@@ -23,7 +23,6 @@ function initializeSlider(){
         slides[slideIndex].classList.add("active");
         intervalId = setInterval(nextSlide, 5000);
     }
-    console.log(slides)
 }
 
 function showSlide(index:number){
