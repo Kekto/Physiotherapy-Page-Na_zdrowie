@@ -3,7 +3,7 @@
     <TitleBanner title="Cennik"/>
     <div class="pricing__content">
       <div class="pricing-item">
-        <img class="pricing-item__image" src="@/assets/images/pricing.jpg"/>
+        <img class="pricing-item__image" src="@/assets/images/pricing.jpg" alt="płatność"/>
         <h3> Cena zabiegu </h3>
         <DividerLine/>
         <div class="pricing-item__description">

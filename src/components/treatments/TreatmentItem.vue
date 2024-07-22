@@ -1,7 +1,7 @@
 <template>
     <div class="treatment-item">
         <div class="treatment-item__content">
-            <div class="treatment-item__content__image">&nbsp;</div>
+            <img class="treatment-item__content__image" :src="require(`@/assets/images/${imageName}.jpg`)" alt="">
             <div class="treatment-item__content__details">
                 <h4>{{ type }}</h4>
                 <DividerLine/>
@@ -37,6 +37,7 @@ type ChildTreatment = {
 const props = defineProps({
     type: String,
     details: String,
+    imageName: String,
     childTreatments: Object as PropType<ChildTreatment[]>,
 });
 
@@ -75,13 +76,20 @@ const collapse = ((type:string) => {
 
         &__image{
             @media (max-width:850px) {
+                inset: 0;
                 width: 100%;
                 height: 200px;
             }
 
+            inset: 0;
+            display: block;
             width: 250px;
-            height: inherit;
-            background-color: rgb(184, 184, 184);
+            height:300px;
+
+            object-fit: cover;
+            object-position: center;
+            
+            background-color: gray;
         }
 
         &__details{

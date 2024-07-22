@@ -5,6 +5,7 @@
       <TreatmentItem 
         :type="item.type"
         :details="item.details"
+        :image-name="item.imageName"
         :child-treatments="item.treatments" 
       />
     </div>
@@ -19,6 +20,7 @@ const treatmentTypes = [
   {
     type: "Treatment type 01",
     details: "Treatment type 01 details",
+    imageName: "treatment_01",
     treatments: [
       {
         name: "Treatment type 01 - Name 01",
@@ -33,6 +35,7 @@ const treatmentTypes = [
   {
     type: "Treatment type 02",
     details: "Treatment type 02 details",
+    imageName: "treatment_02",
     treatments: [
       {
         name: "Treatment type 02 - Name 01",
@@ -43,6 +46,7 @@ const treatmentTypes = [
   {
     type: "Treatment type 03",
     details: "Treatment type 03 details",
+    imageName: "treatment_03",
     treatments: [
       {
         name: "Treatment type 03 - Name 01",
