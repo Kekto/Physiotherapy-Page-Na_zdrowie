@@ -16,7 +16,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .divider-line-horizontal{
-    height: 2px;
+    height: 0px;
     margin: 20px 0 20px 0;
 }
 

@@ -1,4 +1,7 @@
 <template>
+    <div class="carousel-banner">
+        <h1> testowy tekst</h1>
+    </div>
     <div class="carousel-container">
         <img class="carousel-container__slide" src="@/assets/logo.png" alt="#1"/>
         <img class="carousel-container__slide" src="@/assets/łukasz.png" alt="#2"/>
@@ -46,8 +49,25 @@ function nextSlide(){
 </script>
 
 <style scoped lang="scss">
+.carousel-banner{
+    position: absolute;
+    z-index: 1;
+    padding: 0 30px 0 24px;
+
+    border-top: 50px solid #42b983;
+	border-right: 25px solid transparent;
+	height: 0;
+
+    h1 {
+        margin: 12px 0 12px 0;
+        position: relative;
+        top: -56px;
+        color: rgb(235, 235, 235);
+    }
+}
 .carousel-container{
     width: 100vw;
+    min-height: 35vh;
     height: 30vw;
     position: relative;
 
