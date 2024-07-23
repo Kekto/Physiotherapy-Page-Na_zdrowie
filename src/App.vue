@@ -1,52 +1,55 @@
 <template>
-  <nav>
-    <NavBar/>
-  </nav>
-  <router-view class="router-view"/>
+	<nav>
+		<NavBar />
+	</nav>
+	<router-view class="router-view" />
 </template>
 
 <script setup lang="ts">
-import NavBar from "./components/NavBar.vue"
+import NavBar from "./components/NavBar.vue";
+
+document.title = "Łukasz Piszcz - Fizjoterapia";
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
 }
 
-body{
-  margin: 0px
+body {
+	margin: 0px;
 }
 
 nav {
-  position: fixed;
-  height: 70px;
-  align-content: center;
-  width: 100%;
-  background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    text-decoration: none;
-    transition: 0.3s;
+	position: fixed;
+	height: 70px;
+	align-content: center;
+	width: 100%;
+	background-color: white;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
-    &:hover{
-      color: #0e9156;
-    }
+	a {
+		font-weight: bold;
+		color: #2c3e50;
+		text-decoration: none;
+		transition: 0.3s;
 
-    &.router-link-exact-active {
-      color: #0e9156;
-    }
-  }
+		&:hover {
+			color: #0e9156;
+		}
+
+		&.router-link-exact-active {
+			color: #0e9156;
+		}
+	}
 }
 
-.router-view{
-padding-top: 70px;
+.router-view {
+	padding-top: 70px;
 }
 </style>
