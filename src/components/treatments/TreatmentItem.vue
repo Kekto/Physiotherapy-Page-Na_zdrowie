@@ -105,15 +105,9 @@ const collapse = (type: string) => {
 		flex-wrap: wrap;
 
 		&__image {
-			@media (max-width: 850px) {
-				inset: 0;
-				width: 100%;
-				height: 200px;
-			}
-
 			inset: 0;
-			display: block;
-			width: 250px;
+			width: 100%;
+			height: 300px;
 
 			object-fit: cover;
 			object-position: center;
@@ -122,13 +116,10 @@ const collapse = (type: string) => {
 		}
 
 		&__details {
-			@media (min-width: 851px) {
-				width: calc(100% - 290px);
-			}
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			min-width: 300px;
+
 			padding-left: 20px;
 			padding-right: 20px;
 			padding-bottom: 12px;

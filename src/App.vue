@@ -25,6 +25,7 @@ body {
 }
 
 nav {
+	z-index: 10;
 	position: fixed;
 	height: 70px;
 	align-content: center;

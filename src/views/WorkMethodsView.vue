@@ -546,7 +546,7 @@ import TitleBanner from "@/components/TitleBanner.vue";
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 24px;
 	margin-top: 10px;
 }
 

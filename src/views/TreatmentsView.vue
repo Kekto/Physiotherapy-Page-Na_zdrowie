@@ -24,7 +24,7 @@ const treatmentTypes = [
 	{
 		type: "Osteopatia",
 		details:
-			"Osteopatia, zwana też medycyną osteopatyczną jest rodzajem manualnej metody leczenia ludzkiego organizmu, której początki sięgają XIX wieku. Jej prekursorem był wybitny amerykański lekarz/osteopata Andrew Taylor Still. Filozofia która przyświecała mu podczas praktyki lekarskiej, kierowała się odnalezieniem pierwotnej przyczyny choroby, naprawieniem jej i stworzeniem optymalnych warunków do leczenia dla organizmu. Nastawiona na traktowanie ludzkiego ciała jako integralnej całości, w której zachodzą przenikające się procesy. Stąd też w osteopatii diagnozuje się i leczy cały organizmy oraz przyczyny zaburzeń jego funkcjonowania, a nie tylko ich objawy. Na osteopatię należy patrzeć jako integralną część procesu zdrowienia do spółki z medycyną akademicką, a nie jej konkurencję czy wyłączną alternatywę poprawy stanu zdrowia. ",
+			"Osteopatia, zwana też medycyną osteopatyczną jest rodzajem manualnej metody leczenia ludzkiego organizmu, której początki sięgają XIX wieku. Nastawiona na traktowanie ludzkiego ciała jako integralnej całości, w której zachodzą przenikające się procesy. Stąd też w osteopatii diagnozuje się i leczy cały organizm oraz przyczyny zaburzeń jego funkcjonowania, a nie tylko ich objawy. Na osteopatię należy patrzeć jako integralną część procesu zdrowienia do spółki z medycyną akademicką, a nie jej konkurencję czy wyłączną alternatywę poprawy stanu zdrowia. ",
 		imageName: "treatment_01",
 		buttonContent: "Dowiedz się więcej o osteopatii",
 		hashTarget: "osteopatia",
@@ -78,7 +78,8 @@ const treatmentTypes = [
 	},
 	{
 		type: "Inne terapie",
-		details: "Pozostałe zabiegi ",
+		details:
+			"Pozostałe zabiegi oferowane w gabinecie. W ich skład wchodzą: Terapia czaszkowo-krzyżowa oraz suche igłowanie.",
 		imageName: "treatment_03",
 		buttonContent: "Dowiedz się więcej o pozostałych terapiach",
 		hashTarget: "inne",

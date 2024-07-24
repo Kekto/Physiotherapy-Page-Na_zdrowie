@@ -1,7 +1,9 @@
 <template>
 	<div class="nav">
 		<div class="nav__item" v-for="link in LINKS" :key="link.value">
-			<router-link :to="link.route">{{ link.value }}</router-link>
+			<router-link class="nav__item__link" :to="link.route">
+				{{ link.value }}
+			</router-link>
 		</div>
 	</div>
 </template>
@@ -10,7 +12,6 @@
 const LINKS = [
 	{ route: "/", value: "Strona główna" },
 	{ route: "/o-mnie", value: "O mnie" },
-	// {route: "/oferta", value: "Oferta"},
 	{ route: "/jak-pracuje", value: "Jak pracuję" },
 	{ route: "/zabiegi", value: "Zabiegi" },
 	{ route: "/cennik", value: "Cennik" },
@@ -25,5 +26,12 @@ const LINKS = [
 	justify-content: right;
 	gap: 16px;
 	padding-right: 20px;
+	align-items: center;
+
+	&__item {
+		&__link {
+			padding: 20px 0 20px 0;
+		}
+	}
 }
 </style>

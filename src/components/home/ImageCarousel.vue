@@ -1,10 +1,25 @@
 <template>
-	<div class="carousel-banner">
-		<h1>testowy tekst</h1>
-	</div>
 	<div class="carousel-container">
-		<img class="carousel-container__slide" src="@/assets/logo.png" alt="#1" />
-		<img class="carousel-container__slide" src="@/assets/łukasz.png" alt="#2" />
+		<img
+			class="carousel-container__slide"
+			src="@/assets/images/treatment_01.jpg"
+			alt="#1" />
+		<img
+			class="carousel-container__slide"
+			src="@/assets/images/treatment_02.jpg"
+			alt="#2" />
+		<img
+			class="carousel-container__slide"
+			src="@/assets/images/treatment_03.jpg"
+			alt="#3" />
+
+		<div class="carousel-overlay">
+			<div class="carousel-overlay__citation">
+				“To find health should be the object of the doctor. Anyone can find
+				disease.”
+				<div class="author">― Andrew Taylor Still</div>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -48,24 +63,34 @@ function nextSlide() {
 </script>
 
 <style scoped lang="scss">
-.carousel-banner {
+.carousel-overlay {
 	position: absolute;
 	z-index: 1;
-	padding: 0 30px 0 24px;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.3);
 
-	border-top: 50px solid #42b983;
-	border-right: 25px solid transparent;
-	height: 0;
-
-	h1 {
-		margin: 12px 0 12px 0;
+	&__citation {
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		position: relative;
-		top: -56px;
 		color: rgb(235, 235, 235);
+		font-size: 36px;
+		font-style: italic;
+		font-family: "Times New Roman", "Ancient Runes", serif;
 	}
 }
+
+.author {
+	font-size: 20px;
+	margin-top: 20px;
+}
+
 .carousel-container {
-	width: 100vw;
 	min-height: 35vh;
 	height: 30vw;
 	position: relative;
