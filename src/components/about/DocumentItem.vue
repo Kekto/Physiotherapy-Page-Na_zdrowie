@@ -21,6 +21,7 @@ const props = defineProps({
 	transition: 0.3s;
 	font-weight: bold;
 	text-decoration: none;
+	padding-right: 12px;
 	color: black;
 	text-overflow: ellipsis;
 	overflow: hidden;
