@@ -54,28 +54,48 @@ import DocumentItem from "@/components/about/DocumentItem.vue";
 
 const documents = [
 	{
-		name: "file_01",
-		path: "/media/CV_PL.pdf",
+		name: "Anatomia Palpacyjna",
+		path: "/media/Anatomia-Palpacyjna.pdf",
 	},
 	{
-		name: "file_02",
-		path: "/media/CV_PL.pdf",
+		name: "Kinesiology Taping",
+		path: "/media/Kinesiology-Taping.pdf",
 	},
 	{
-		name: "file_03",
-		path: "/media/CV_PL.pdf",
+		name: "Kręgosłup - osteopatyczna diagnostyka i leczenie I",
+		path: "/media/Kregoslup-osteopatyczna-diagnostyka-i-leczenie-cz-I.pdf",
 	},
 	{
-		name: "file_04",
-		path: "/media/CV_PL.pdf",
+		name: "Kręgosłup - osteopatyczna diagnostyka i leczenie II",
+		path: "/media/Kregoslup-osteopatyczna-diagnostyka-i-leczenie-cz-II.pdf",
 	},
 	{
-		name: "file_05",
-		path: "/media/CV_PL.pdf",
+		name: "Kręgosłup - osteopatyczna diagnostyka i leczenie II",
+		path: "/media/Kregoslup-osteopatyczna-diagnostyka-i-leczenie-cz-III.pdf",
 	},
 	{
-		name: "file_06",
-		path: "/media/CV_PL.pdf",
+		name: "Kręgosłup - osteopatyczna diagnostyka i leczenie IV",
+		path: "/media/Kregoslup-osteopatyczna-diagnostyka-i-leczenie-cz-IV.pdf",
+	},
+	{
+		name: "Manipulacje powięzi",
+		path: "/media/Manipulacje-powięzi.pdf",
+	},
+	{
+		name: "Stawy obwodowe - osteopatyczna diagnostyka i leczenie I",
+		path: "/media/Stawy-obwodowe-osteopatyczna-diagnostyka-i-leczenie-cz-I.pdf",
+	},
+	{
+		name: "Stawy obwodowe - osteopatyczna diagnostyka i leczenie III",
+		path: "/media/Stawy-obwodowe-osteopatyczna-diagnostyka-i-leczenie-cz-III.pdf",
+	},
+	{
+		name: "Suche igłowanie",
+		path: "/media/Suche-iglowanie.pdf",
+	},
+	{
+		name: "Tkanki miekkie",
+		path: "/media/Tkanki-miekkie.pdf",
 	},
 ];
 </script>
