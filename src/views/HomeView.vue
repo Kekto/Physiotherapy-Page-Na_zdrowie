@@ -23,6 +23,39 @@
 				</div>
 			</div>
 		</div>
+		<div class="short-treatments">
+			<h2>Oferowane zabiegi</h2>
+			<div class="short-treatments__content">
+				<div class="short-treatments__content__item">
+					<img
+						class="short-treatments__content__item__image"
+						src="@/assets/images/treatment_01.jpg"
+						alt="Osteopatia"
+						@click="router.push({ path: '/zabiegi', hash: `#osteopatia` })" />
+					<div class="short-treatments__content__item__details">Osteopatia</div>
+				</div>
+				<div class="short-treatments__content__item">
+					<img
+						class="short-treatments__content__item__image"
+						src="@/assets/images/treatment_02.jpg"
+						alt="Osteopatia"
+						@click="router.push({ path: '/zabiegi', hash: `#fizjoterapia` })" />
+					<div class="short-treatments__content__item__details">
+						Fizjoterapia
+					</div>
+				</div>
+				<div class="short-treatments__content__item">
+					<img
+						class="short-treatments__content__item__image"
+						src="@/assets/images/treatment_03.jpg"
+						alt="Inne zabiegi"
+						@click="router.push({ path: '/zabiegi', hash: `#inne` })" />
+					<div class="short-treatments__content__item__details">
+						Inne zabiegi
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -52,7 +85,6 @@ import router from "@/router";
 			width: 300px;
 			height: 450px;
 			background-color: rgb(226, 226, 226);
-			box-shadow: rgba(88, 88, 88, 0.9) 0px 7px 29px 0px;
 		}
 
 		&__details {
@@ -63,6 +95,47 @@ import router from "@/router";
 			color: white;
 			font-size: 20px;
 			height: fit-content;
+		}
+	}
+}
+
+.short-treatments {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 40px;
+
+	&__content {
+		margin: 5vw;
+		margin-bottom: 40px;
+		margin-top: 40px;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+
+		&__item {
+			&__image {
+				height: 250px;
+				width: 250px;
+				margin-bottom: 24px;
+				box-shadow: rgba(88, 88, 88, 0.9) 0px 7px 19px 0px;
+				display: block;
+				object-fit: cover;
+				object-position: center;
+				transition: transform 0.5s ease;
+
+				&:hover {
+					cursor: pointer;
+					transform: scale(1.1);
+				}
+			}
+
+			&__details {
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
 		}
 	}
 }

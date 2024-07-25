@@ -1,5 +1,5 @@
 <template>
-	<div class="treatment-item">
+	<div :id="hashTarget" class="treatment-item">
 		<div class="treatment-item__content">
 			<img
 				class="treatment-item__content__image"
