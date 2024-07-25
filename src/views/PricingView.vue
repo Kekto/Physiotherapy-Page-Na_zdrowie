@@ -10,13 +10,7 @@
 				<h3>Cena zabiegu</h3>
 				<DividerLine />
 				<div class="pricing-item__description">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum.
+					Konsultacja osteopatyczna i fizjoterapeutyczna
 				</div>
 				<div
 					class="pricing-item__buttons"
@@ -26,7 +20,7 @@
 				<DividerLine />
 				<div class="pricing-item__price">
 					<div class="pricing-item__price__value">180</div>
-					<div class="pricing-item__price__currency">zł</div>
+					<div class="pricing-item__price__currency">zł / 45 min</div>
 				</div>
 			</div>
 		</div>
@@ -75,7 +69,8 @@ import router from "@/router";
 	&__description {
 		width: auto;
 		box-sizing: border-box;
-		text-align: justify;
+		text-align: center;
+		font-size: 20px;
 		padding: 0px 20px 0px 20px;
 	}
 

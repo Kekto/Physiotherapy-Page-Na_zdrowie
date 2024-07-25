@@ -24,7 +24,7 @@ const routes: Array<RouteRecordRaw> = [
 		component: OfferView,
 	},
 	{
-		path: "/jak-pracuje",
+		path: "/zakres-uslug",
 		name: "workmethods",
 		component: WorkMethodsView,
 	},

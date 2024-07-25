@@ -4,22 +4,21 @@
 		<div class="contact__content">
 			<div class="contact__content__info">
 				<div class="contact__content__info__details">
-					<h3>FIZJO – GABINET FIZJOTERAPII</h3>
+					<h3>Po Zdrowie Osteopatia i Fizjoterapia</h3>
 				</div>
 				<div class="contact__content__info__details">
-					<a>Budynek Xxxxx: X piętro – lokal nr XX</a>
-					<a>ul. Xxxxxxxx Xxxxxxxxxx X, XX-XXX Lublin</a>
+					<a>Budynek Irydion: 5 piętro – lokal nr 55</a>
+					<a>ul. Zygmunta Krasińskiego 2, 20-709 Lublin</a>
 				</div>
 				<div class="contact__content__info__details">
-					<a>poniedziałek-piątek: 0.00-00.00</a>
-					<a>sobota: 0.00-00.00</a>
-					<a>niedziela: nieczynne</a>
+					<a>poniedziałek-piątek: 10:00 - 20:00</a>
+					<a>sobota-niedziela: nieczynne</a>
 				</div>
 				<div class="contact__content__info__details">
 					<a>Telefon:</a>
 					<div>
 						<img src="@/assets/icons/phone.svg" class="icon" />
-						<a class="bold">XXX XXX XXX</a>
+						<a class="bold">721 112 921</a>
 					</div>
 					<div>
 						<img src="@/assets/icons/envelope.svg" class="icon" />

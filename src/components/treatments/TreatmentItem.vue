@@ -29,7 +29,7 @@
 				</div>
 				<button
 					@click="
-						router.push({ path: '/jak-pracuje', hash: `#${hashTarget}` })
+						router.push({ path: '/zakres-uslug', hash: `#${hashTarget}` })
 					">
 					{{ buttonContent }}
 				</button>

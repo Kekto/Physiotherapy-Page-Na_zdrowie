@@ -1,9 +1,18 @@
 <template>
-	<div class="nav">
-		<div class="nav__item" v-for="link in LINKS" :key="link.value">
-			<router-link class="nav__item__link" :to="link.route">
-				{{ link.value }}
-			</router-link>
+	<div class="navbar-content">
+		<div class="navbar-content__logo">
+			[logo]
+			<h1>Po zdrowie</h1>
+		</div>
+		<div class="navbar-content__nav">
+			<div
+				class="navbar-content__nav__item"
+				v-for="link in LINKS"
+				:key="link.value">
+				<router-link class="navbar-content__nav__item__link" :to="link.route">
+					{{ link.value }}
+				</router-link>
+			</div>
 		</div>
 	</div>
 </template>
@@ -12,7 +21,7 @@
 const LINKS = [
 	{ route: "/", value: "Strona główna" },
 	{ route: "/o-mnie", value: "O mnie" },
-	{ route: "/jak-pracuje", value: "Jak pracuję" },
+	{ route: "/zakres-uslug", value: "Zakres usług" },
 	{ route: "/zabiegi", value: "Zabiegi" },
 	{ route: "/cennik", value: "Cennik" },
 	{ route: "/kontakt", value: "Kontakt" },
@@ -20,18 +29,52 @@ const LINKS = [
 </script>
 
 <style lang="scss" scoped>
-.nav {
+.navbar-content {
 	display: flex;
 	flex-direction: row;
-	justify-content: right;
-	gap: 16px;
-	padding-right: 20px;
-	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 8px;
 
-	&__item {
-		&__link {
-			padding: 20px 0 20px 0;
+	@media (max-width: 750px) {
+		flex-direction: column;
+	}
+
+	&__logo {
+		padding-left: 20px;
+		display: flex;
+		flex-direction: row;
+		gap: 12px;
+		align-items: center;
+
+		@media (max-width: 750px) {
+			justify-content: center;
 		}
 	}
+
+	&__nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: right;
+		gap: 16px;
+		padding-right: 20px;
+		align-items: center;
+
+		@media (max-width: 750px) {
+			justify-content: center;
+		}
+
+		&__item {
+			&__link {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+h1 {
+	font-size: 18px;
+	margin: 8px 0 8px 0;
 }
 </style>

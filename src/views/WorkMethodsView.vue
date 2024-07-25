@@ -1,6 +1,23 @@
 <template>
 	<div class="work-methods">
-		<TitleBanner title="Jak pracuję" />
+		<TitleBanner title="Zakres usług" />
+		<div class="work-methods__treatments-list">
+			<div
+				class="work-methods__treatments-list__item"
+				@click="router.push({ path: '/zakres-uslug', hash: `#osteopatia` })">
+				Osteopatia
+			</div>
+			<div
+				class="work-methods__treatments-list__item"
+				@click="router.push({ path: '/zakres-uslug', hash: `#fizjoterapia` })">
+				Fizjoterapia
+			</div>
+			<div
+				class="work-methods__treatments-list__item"
+				@click="router.push({ path: '/zakres-uslug', hash: `#inne` })">
+				Inne zabiegi
+			</div>
+		</div>
 		<div class="work-methods__content">
 			<div id="osteopatia" class="work-methods__content__block">
 				<h4>Osteopatia</h4>
@@ -437,7 +454,7 @@
 				</div>
 			</div>
 
-			<h3 id="inne">Inne metody</h3>
+			<h3 id="inne">Inne zabiegi</h3>
 			<div class="work-methods__content__block">
 				<h4>Terapia czaszkowo-krzyżowa</h4>
 				<div class="work-methods__content__block__details">
@@ -510,10 +527,35 @@
 
 <script setup lang="ts">
 import TitleBanner from "@/components/TitleBanner.vue";
+import router from "@/router";
 </script>
 
 <style scoped lang="scss">
 .work-methods {
+	&__treatments-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin-top: 20px;
+
+		&__item {
+			padding: 20px;
+			width: 100%;
+			font-weight: bold;
+			font-size: 16px;
+			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+				rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+			border: none;
+			transition: 0.3s;
+			cursor: pointer;
+
+			&:hover:not(:disabled) {
+				background: #42b983;
+				color: white;
+			}
+		}
+	}
+
 	&__content {
 		margin: 5vw;
 		margin-bottom: 40px;

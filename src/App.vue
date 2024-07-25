@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import NavBar from "./components/NavBar.vue";
 
-document.title = "Łukasz Piszcz - Fizjoterapia";
+document.title = "Po Zdrowie Osteopatia i Fizjoterapia - Łukasz Piszcz";
 </script>
 
 <style lang="scss">
@@ -34,6 +34,10 @@ nav {
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
+	@media (max-width: 750px) {
+		height: 100px;
+	}
+
 	a {
 		font-weight: bold;
 		color: #2c3e50;
@@ -52,5 +56,9 @@ nav {
 
 .router-view {
 	padding-top: 70px;
+
+	@media (max-width: 750px) {
+		padding-top: 100px;
+	}
 }
 </style>
