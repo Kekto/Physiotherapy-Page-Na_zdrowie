@@ -103,7 +103,7 @@ button {
 	padding: 8px 20px 8px 20px;
 	margin: 24px 0 0 0;
 	align-self: center;
-	background: #42b983;
+	background: #018060;
 	color: white;
 	font-weight: bold;
 	font-size: 16px;
@@ -115,7 +115,7 @@ button {
 
 	&:hover:not(:disabled) {
 		background: white;
-		color: #42b983;
+		color: #018060;
 	}
 }
 </style>

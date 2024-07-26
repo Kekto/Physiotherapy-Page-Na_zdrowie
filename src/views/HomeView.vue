@@ -3,26 +3,6 @@
 		<div class="title-banner">
 			<ImageCarousel />
 		</div>
-		<div class="short-about-me">
-			<div class="short-about-me__content">
-				<img class="short-about-me__content__image" src="@/assets/łukasz.png" />
-				<div class="short-about-me__content__details">
-					<h2>Łukasz Piszcz</h2>
-					<div>
-						Absolwent studiów magisterskich Uniwersytetu Medycznego w Lublinie,
-						na kierunku fizjoterapia. Uczestnik wielu renomowanych szkoleń.
-						Pierwsze zawodowe kroki stawiał będąc jeszcze na studiach. Dzięki
-						obszernej wiedzy wyniesionej z licznych szkoleń, w swojej terapii
-						kieruje się kompleksowym spojrzeniem na dolegliwości pacjentów i
-						leczeniem przyczyn powstałych dysfunkcji, a nie tylko „zaleczaniu”
-						objawów.
-					</div>
-					<button class="button" @click="router.push({ path: '/o-mnie' })">
-						Więcej o mnie
-					</button>
-				</div>
-			</div>
-		</div>
 		<div class="short-treatments">
 			<h2>Oferowane zabiegi</h2>
 			<div class="short-treatments__content">
@@ -49,10 +29,47 @@
 						class="short-treatments__content__item__image"
 						src="@/assets/images/treatment_03.jpg"
 						alt="Inne zabiegi"
-						@click="router.push({ path: '/zabiegi', hash: `#inne` })" />
+						@click="
+							router.push({
+								path: '/zabiegi',
+								hash: `#terapia-czaszkowo-krzyzowa`,
+							})
+						" />
 					<div class="short-treatments__content__item__details">
-						Inne zabiegi
+						Terapia czaszkowo-krzyżowa
 					</div>
+				</div>
+				<div class="short-treatments__content__item">
+					<img
+						class="short-treatments__content__item__image"
+						src="@/assets/images/treatment_04.jpg"
+						alt="Inne zabiegi"
+						@click="
+							router.push({ path: '/zabiegi', hash: `#suche-iglowanie` })
+						" />
+					<div class="short-treatments__content__item__details">
+						Suche igłowanie
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="short-about-me">
+			<div class="short-about-me__content">
+				<img class="short-about-me__content__image" src="@/assets/łukasz.png" />
+				<div class="short-about-me__content__details">
+					<h2>Łukasz Piszcz</h2>
+					<div>
+						Absolwent studiów magisterskich Uniwersytetu Medycznego w Lublinie,
+						na kierunku fizjoterapia. Uczestnik wielu renomowanych szkoleń.
+						Pierwsze zawodowe kroki stawiał będąc jeszcze na studiach. Dzięki
+						obszernej wiedzy wyniesionej z licznych szkoleń, w swojej terapii
+						kieruje się kompleksowym spojrzeniem na dolegliwości pacjentów i
+						leczeniem przyczyn powstałych dysfunkcji, a nie tylko „zaleczaniu”
+						objawów.
+					</div>
+					<button class="button" @click="router.push({ path: '/o-mnie' })">
+						Więcej o mnie
+					</button>
 				</div>
 			</div>
 		</div>
@@ -66,7 +83,7 @@ import router from "@/router";
 
 <style lang="scss" scoped>
 .short-about-me {
-	background-color: #42b983;
+	background-color: #018060;
 	display: flex;
 	justify-content: center;
 
@@ -116,6 +133,10 @@ import router from "@/router";
 		flex-wrap: wrap;
 
 		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
 			&__image {
 				height: 250px;
 				width: 250px;
@@ -133,7 +154,7 @@ import router from "@/router";
 			}
 
 			&__details {
-				font-size: 24px;
+				font-size: 20px;
 				margin-bottom: 20px;
 			}
 		}
@@ -145,8 +166,8 @@ button {
 	padding: 8px 20px 8px 20px;
 	margin: 60px 0 0 0;
 	align-self: center;
-	color: #42b983;
-	background: white;
+	color: #018060;
+	background: #dcbb57;
 	font-weight: bold;
 	font-size: 16px;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -156,8 +177,8 @@ button {
 	cursor: pointer;
 
 	&:hover:not(:disabled) {
-		color: white;
-		background: #42b983;
+		color: #dcbb57;
+		background: #018060;
 	}
 }
 </style>

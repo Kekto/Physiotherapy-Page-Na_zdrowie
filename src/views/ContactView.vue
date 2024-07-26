@@ -28,16 +28,12 @@
 			</div>
 			<ContactsGoogleMap />
 		</div>
-		<div class="contact__content" style="justify-content: center">
-			<MailToComponent />
-		</div>
 	</div>
 </template>
 
 <script setup lang="ts">
 import TitleBanner from "../components/TitleBanner.vue";
 import ContactsGoogleMap from "../components/contact/ContactsGoogleMap.vue";
-import MailToComponent from "../components/contact/MailToComponent.vue";
 </script>
 
 <style lang="scss" scoped>
@@ -76,7 +72,7 @@ import MailToComponent from "../components/contact/MailToComponent.vue";
 	color: black;
 
 	&:hover {
-		color: #0e9156;
+		color: #018060;
 	}
 }
 

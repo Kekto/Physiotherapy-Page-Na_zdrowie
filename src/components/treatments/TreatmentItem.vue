@@ -119,6 +119,7 @@ const collapse = (type: string) => {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			width: 100%;
 
 			padding-left: 20px;
 			padding-right: 20px;
@@ -136,11 +137,11 @@ const collapse = (type: string) => {
 		justify-content: center;
 		align-items: center;
 		transition: 0.3s;
-		background-color: #42b983;
+		background-color: #018060;
 
 		&:hover {
 			cursor: pointer;
-			background-color: #6ae7af;
+			background-color: #03ca98;
 			transition: 0.3s;
 		}
 	}
@@ -191,7 +192,7 @@ button {
 	padding: 8px 20px 8px 20px;
 	width: 100%;
 	align-self: center;
-	background: #42b983;
+	background: #018060;
 	color: white;
 	font-weight: bold;
 	font-size: 16px;
@@ -203,7 +204,7 @@ button {
 
 	&:hover:not(:disabled) {
 		background: white;
-		color: #42b983;
+		color: #018060;
 	}
 }
 

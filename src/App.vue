@@ -30,26 +30,27 @@ nav {
 	height: 70px;
 	align-content: center;
 	width: 100%;
-	background-color: white;
+	color: #dcbb57;
+	background-color: #018060;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
-	@media (max-width: 750px) {
+	@media (max-width: 800px) {
 		height: 100px;
 	}
 
 	a {
 		font-weight: bold;
-		color: #2c3e50;
+		color: #ceab43;
 		text-decoration: none;
 		transition: 0.3s;
 
 		&:hover {
-			color: #0e9156;
+			color: #f0b913;
 		}
 
 		&.router-link-exact-active {
-			color: #0e9156;
+			color: #f0b913;
 		}
 	}
 }
@@ -57,7 +58,7 @@ nav {
 .router-view {
 	padding-top: 70px;
 
-	@media (max-width: 750px) {
+	@media (max-width: 800px) {
 		padding-top: 100px;
 	}
 }

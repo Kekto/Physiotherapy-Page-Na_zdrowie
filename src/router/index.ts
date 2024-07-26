@@ -19,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
 		component: AboutView,
 	},
 	{
-		path: "/oferta",
+		path: "/co-leczymy",
 		name: "offer",
 		component: OfferView,
 	},

@@ -14,8 +14,20 @@
 			</div>
 			<div
 				class="work-methods__treatments-list__item"
-				@click="router.push({ path: '/zakres-uslug', hash: `#inne` })">
-				Inne zabiegi
+				@click="
+					router.push({
+						path: '/zakres-uslug',
+						hash: `#terapia-czaszkowo-krzyzowa`,
+					})
+				">
+				Terapia czaszkowo-krzyżowa
+			</div>
+			<div
+				class="work-methods__treatments-list__item"
+				@click="
+					router.push({ path: '/zakres-uslug', hash: `#suche-iglowanie` })
+				">
+				Suche igłowanie
 			</div>
 		</div>
 		<div class="work-methods__content">
@@ -453,10 +465,8 @@
 					</ol>
 				</div>
 			</div>
-
-			<h3 id="inne">Inne zabiegi</h3>
 			<div class="work-methods__content__block">
-				<h4>Terapia czaszkowo-krzyżowa</h4>
+				<h4 id="terapia-czaszkowo-krzyzowa">Terapia czaszkowo-krzyżowa</h4>
 				<div class="work-methods__content__block__details">
 					Terapia czaszkowo-krzyżowa (Craniosacral Therapy - CST) to forma
 					medycyny alternatywnej, która polega na delikatnych manipulacjach
@@ -481,7 +491,7 @@
 				</div>
 			</div>
 			<div class="work-methods__content__block">
-				<h4>Suche igłowanie</h4>
+				<h4 id="suche-iglowanie">Suche igłowanie</h4>
 				<div class="work-methods__content__block__details">
 					Suche igłowanie, znane również jako terapia Dry Needling, to technika
 					fizykoterapii polegająca na wprowadzaniu bardzo cienkich, sterylnych
@@ -550,7 +560,7 @@ import router from "@/router";
 			cursor: pointer;
 
 			&:hover:not(:disabled) {
-				background: #42b983;
+				background: #018060;
 				color: white;
 			}
 		}

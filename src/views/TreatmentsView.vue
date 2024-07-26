@@ -77,18 +77,26 @@ const treatmentTypes = [
 		],
 	},
 	{
-		type: "Inne terapie",
-		details:
-			"Pozostałe zabiegi oferowane w gabinecie. W ich skład wchodzą: Terapia czaszkowo-krzyżowa oraz suche igłowanie.",
+		type: "Terapia czaszkowo-krzyżowa",
+		details: "",
 		imageName: "treatment_03",
-		buttonContent: "Dowiedz się więcej o pozostałych terapiach",
-		hashTarget: "inne",
+		buttonContent: "Dowiedz się więcej o terapii czaszkowo-krzyżowej",
+		hashTarget: "terapia-czaszkowo-krzyzowa",
 		treatments: [
 			{
 				name: "Terapia czaszkowo-krzyżowa",
 				details:
 					"Terapia czaszkowo-krzyżowa (Craniosacral Therapy - CST) to forma medycyny alternatywnej, która polega na delikatnych manipulacjach czaszką, kręgosłupem i miednicą, aby wpłynąć na przepływ płynu mózgowo-rdzeniowego i poprawić ogólny stan zdrowia.",
 			},
+		],
+	},
+	{
+		type: "Suche igłowanie",
+		details: "",
+		imageName: "treatment_04",
+		buttonContent: "Dowiedz się więcej o suchym igłowaniu",
+		hashTarget: "suche-iglowanie",
+		treatments: [
 			{
 				name: "Suche Igłowanie",
 				details:

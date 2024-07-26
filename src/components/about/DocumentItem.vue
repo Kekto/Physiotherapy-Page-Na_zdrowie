@@ -29,7 +29,7 @@ const props = defineProps({
 
 	&:hover {
 		transition: 0.3s;
-		color: #0e9156;
+		color: #098b54;
 		cursor: pointer;
 	}
 }

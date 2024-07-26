@@ -16,7 +16,7 @@ const props = defineProps({
 .title-banner {
 	height: 75px;
 	width: auto;
-	background-color: #42b983;
+	background-color: #018060;
 	display: flex;
 	justify-content: left;
 	align-items: center;

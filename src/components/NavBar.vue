@@ -22,7 +22,9 @@ const LINKS = [
 	{ route: "/", value: "Strona główna" },
 	{ route: "/o-mnie", value: "O mnie" },
 	{ route: "/zakres-uslug", value: "Zakres usług" },
+	{ route: "/co-leczymy", value: "Co leczymy" },
 	{ route: "/zabiegi", value: "Zabiegi" },
+	{ route: "/pierwsza-wizyta", value: "Pierwsza wizyta" },
 	{ route: "/cennik", value: "Cennik" },
 	{ route: "/kontakt", value: "Kontakt" },
 ];
@@ -36,7 +38,7 @@ const LINKS = [
 	flex-wrap: wrap;
 	gap: 8px;
 
-	@media (max-width: 750px) {
+	@media (max-width: 800px) {
 		flex-direction: column;
 	}
 
@@ -47,7 +49,7 @@ const LINKS = [
 		gap: 12px;
 		align-items: center;
 
-		@media (max-width: 750px) {
+		@media (max-width: 800px) {
 			justify-content: center;
 		}
 	}
@@ -60,8 +62,9 @@ const LINKS = [
 		padding-right: 20px;
 		align-items: center;
 
-		@media (max-width: 750px) {
+		@media (max-width: 800px) {
 			justify-content: center;
+			gap: 8px;
 		}
 
 		&__item {
