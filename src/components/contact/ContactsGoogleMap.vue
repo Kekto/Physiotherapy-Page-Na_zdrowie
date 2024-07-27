@@ -3,7 +3,7 @@
 		api-key="AIzaSyD4vD_jiEOYTc0sq7_3gJ0xWG1YqSn2aJc"
 		class="google-map"
 		:center="center"
-		:zoom="15">
+		:zoom="16">
 		<Marker :options="{ position: center }" />
 	</GoogleMap>
 </template>
@@ -16,7 +16,9 @@ const center = { lat: 51.24190516009711, lng: 22.516958270265285 };
 
 <style lang="scss" scoped>
 .google-map {
-	width: 400px;
-	height: 300px;
+	min-width: 400px;
+	width: 40%;
+	min-height: 300px;
+	height: 400px;
 }
 </style>
