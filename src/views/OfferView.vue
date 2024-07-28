@@ -11,8 +11,37 @@
 				</div>
 			</div>
 			<img
+				v-show="imagePath == 'Kręgosłup'"
 				class="offer__content__image"
-				:src="require(`@/assets/images/${imagePath}.jpg`)" />
+				:src="require(`@/assets/images/Kręgosłup.jpg`)" />
+			<img
+				v-show="imagePath == 'Łokieć'"
+				class="offer__content__image"
+				:src="require(`@/assets/images/Łokieć.jpg`)" />
+			<img
+				v-show="imagePath == 'Bark'"
+				class="offer__content__image"
+				src="@/assets/images/Bark.jpg" />
+			<img
+				v-show="imagePath == 'Głowa'"
+				class="offer__content__image"
+				src="@/assets/images/Głowa.jpg" />
+			<img
+				v-show="imagePath == 'Brzuch'"
+				class="offer__content__image"
+				src="@/assets/images/Brzuch.jpg" />
+			<img
+				v-show="imagePath == 'Biodro'"
+				class="offer__content__image"
+				src="@/assets/images/Biodro.jpg" />
+			<img
+				v-show="imagePath == 'Kolano'"
+				class="offer__content__image"
+				src="@/assets/images/Kolano.jpg" />
+			<img
+				v-show="imagePath == 'Stopa'"
+				class="offer__content__image"
+				src="@/assets/images/Stopa.jpg" />
 		</div>
 	</div>
 </template>
