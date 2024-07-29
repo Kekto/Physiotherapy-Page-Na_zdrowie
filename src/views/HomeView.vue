@@ -73,6 +73,17 @@
 				</div>
 			</div>
 		</div>
+		<div class="short-contact-foot">
+			<div>Po zdrowie - Osteopatia i fizjoterapia - Łukasz Piszcz</div>
+			<div>
+				<img src="@/assets/icons/phone.svg" class="icon" />
+				<a class="bold">721 112 921</a>
+			</div>
+			<div>
+				<img src="@/assets/icons/envelope.svg" class="icon" />
+				<a href="mailto:info@mail.pl" class="bold link">info@mail.pl</a>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -161,6 +172,18 @@ import router from "@/router";
 	}
 }
 
+.short-contact-foot {
+	background-color: #424242;
+	color: white;
+	font-size: 14px;
+	text-align: left;
+	text-decoration: none;
+	padding: 40px 20px 40px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
 button {
 	width: 100%;
 	padding: 8px 20px 8px 20px;
@@ -179,6 +202,21 @@ button {
 	&:hover:not(:disabled) {
 		color: #dcbb57;
 		background: #018060;
+	}
+}
+
+.icon {
+	height: 14px;
+	padding-right: 8px;
+	filter: invert(1);
+}
+
+.link {
+	text-decoration: none;
+	color: white;
+
+	&:hover {
+		text-decoration: dashed;
 	}
 }
 </style>

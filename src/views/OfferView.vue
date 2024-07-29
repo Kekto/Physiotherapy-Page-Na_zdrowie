@@ -6,7 +6,7 @@
 				<div
 					v-for="item in offerList"
 					:key="item.type"
-					@mouseover="setImage(item.type)">
+					@mouseover="setImagePath(item.type)">
 					<OfferItem :type="item.type" :item-list="item.itemList" />
 				</div>
 			</div>
@@ -25,7 +25,7 @@
 			<img
 				v-show="imagePath == 'Głowa'"
 				class="offer__content__image"
-				src="@/assets/images/Głowa.jpg" />
+				src="@/assets/images/treatment_03.jpg" />
 			<img
 				v-show="imagePath == 'Brzuch'"
 				class="offer__content__image"
@@ -147,7 +147,7 @@ const offerList = [
 	},
 ];
 
-const setImage = (type: string) => {
+const setImagePath = (type: string) => {
 	imagePath.value = type;
 };
 </script>
