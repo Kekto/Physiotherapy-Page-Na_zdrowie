@@ -6,6 +6,7 @@ import WorkMethodsView from "../views/WorkMethodsView.vue";
 import TreatmentsView from "../views/TreatmentsView.vue";
 import PricingView from "../views/PricingView.vue";
 import ContactView from "../views/ContactView.vue";
+import FirstVisitView from "@/views/FirstVisitView.vue";
 
 const routes: Array<RouteRecordRaw> = [
 	{
@@ -32,6 +33,11 @@ const routes: Array<RouteRecordRaw> = [
 		path: "/zabiegi",
 		name: "treatments",
 		component: TreatmentsView,
+	},
+	{
+		path: "/pierwsza-wizyta",
+		name: "firstvisit",
+		component: FirstVisitView,
 	},
 	{
 		path: "/cennik",
