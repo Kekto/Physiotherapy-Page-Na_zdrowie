@@ -200,8 +200,7 @@ button {
 	cursor: pointer;
 
 	&:hover:not(:disabled) {
-		color: #dcbb57;
-		background: #018060;
+		background: white;
 	}
 }
 
