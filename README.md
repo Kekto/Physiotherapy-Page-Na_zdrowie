@@ -1,4 +1,4 @@
-# fizjo
+# Physiotherapy Page "Na zdrowie"
 
 ## Project setup
 ```
